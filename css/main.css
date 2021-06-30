@@ -1,0 +1,764 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+ol, ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #141617; }
+
+.big-small-sections, .container .section-whats-new .small-4-section {
+  margin-top: 2.5%;
+  width: 100%;
+  height: 532px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+
+.container {
+  background-color: #f2f6f8;
+  width: 100vw;
+  margin: 0 auto; }
+  .container header {
+    width: 100%;
+    height: 132px;
+    background-color: #141617; }
+    .container header .first-section {
+      width: 100%;
+      height: 50%; }
+      .container header .first-section .left-content {
+        width: 25%;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 10%; }
+        .container header .first-section .left-content:first-child a:first-child {
+          opacity: 1; }
+        .container header .first-section .left-content a {
+          color: white;
+          transition: 300ms all;
+          opacity: 0.7;
+          font-size: 15px;
+          font-weight: 300; }
+          .container header .first-section .left-content a:hover {
+            opacity: 1; }
+      .container header .first-section .right-content {
+        margin-right: 10%;
+        float: right;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; }
+        .container header .first-section .right-content a {
+          color: white;
+          transition: 300ms all;
+          opacity: 0.7;
+          font-size: 15px;
+          font-weight: 300; }
+          .container header .first-section .right-content a:hover {
+            opacity: 1; }
+    .container header .last-section {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center; }
+      .container header .last-section .bottom-content {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .container header .last-section .bottom-content .search-bar {
+          width: 100%;
+          height: 70%;
+          border-radius: 5px;
+          background-color: #1e2128;
+          font-size: 14px;
+          font-weight: 300;
+          padding: 15px;
+          color: white; }
+          .container header .last-section .bottom-content .search-bar::placeholder {
+            transition: 300ms all; }
+          .container header .last-section .bottom-content .search-bar:focus {
+            outline: none; }
+        .container header .last-section .bottom-content button {
+          width: 5%;
+          height: 70%;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          position: absolute;
+          left: 95%;
+          background-color: transparent;
+          cursor: pointer;
+          transition: 300ms all; }
+          .container header .last-section .bottom-content button:hover {
+            background-color: blue; }
+          .container header .last-section .bottom-content button i {
+            color: white;
+            font-size: 15px; }
+  .container .banner {
+    width: 100%;
+    height: 640px;
+    background-image: linear-gradient(170deg, #212A39 0%, #181E28 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .container .banner .left-content {
+      width: 30%;
+      height: 60%; }
+      .container .banner .left-content h1 {
+        font-size: 50px;
+        font-weight: 400;
+        color: white; }
+      .container .banner .left-content h3 {
+        margin-top: 2.5%;
+        font-size: 26px;
+        font-weight: 350;
+        opacity: 0.5;
+        color: white; }
+      .container .banner .left-content button {
+        width: 300px;
+        height: 60px;
+        font-weight: 300;
+        color: white;
+        font-size: 18px;
+        border-radius: 4px;
+        background-color: blue;
+        margin-top: 10%;
+        opacity: 0.7;
+        cursor: pointer;
+        transition: 300ms all; }
+        .container .banner .left-content button:hover {
+          transform: scale(1.1);
+          opacity: 1; }
+    .container .banner .right-content {
+      width: 30%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      .container .banner .right-content img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: 300ms all; }
+        .container .banner .right-content img:hover {
+          transform: scale(1.1); }
+  .container .section-whats-new {
+    width: 80%;
+    margin: 5% auto auto 10%; }
+    .container .section-whats-new .top-section {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .container .section-whats-new .top-section .text h1 {
+        font-size: 35px;
+        font-weight: 300;
+        color: black;
+        opacity: 0.8; }
+      .container .section-whats-new .top-section .text h3 {
+        margin-top: 2.5%;
+        font-size: 18px;
+        font-weight: 300;
+        opacity: 0.5; }
+      .container .section-whats-new .top-section button {
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: blue;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        font-weight: 350; }
+        .container .section-whats-new .top-section button:hover i {
+          transform: translateX(50%); }
+        .container .section-whats-new .top-section button i {
+          font-size: 12px;
+          margin-left: 5.5%;
+          transition: 300ms all; }
+    .container .section-whats-new .big-3-section {
+      margin-top: 2.5%;
+      width: 100%;
+      height: 532px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap; }
+      .container .section-whats-new .big-3-section .content {
+        width: 31.5%;
+        height: 100%;
+        padding: 15px;
+        transition: 300ms all;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 4px; }
+        .container .section-whats-new .big-3-section .content:hover .image-content img {
+          transform: scale(1.1); }
+        .container .section-whats-new .big-3-section .content:hover {
+          box-shadow: 0px 0px 20px #c3c3c3; }
+        .container .section-whats-new .big-3-section .content .image-content {
+          width: 100%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .container .section-whats-new .big-3-section .content .image-content img {
+            width: 200px;
+            height: 200px;
+            transition: 300ms all;
+            object-fit: cover; }
+          .container .section-whats-new .big-3-section .content .image-content span {
+            margin-top: 5%;
+            opacity: 0.5;
+            font-weight: 250; }
+        .container .section-whats-new .big-3-section .content .title {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .section-whats-new .big-3-section .content .title h2 {
+            font-weight: 350; }
+        .container .section-whats-new .big-3-section .content .profile {
+          width: 100%;
+          height: 15%; }
+          .container .section-whats-new .big-3-section .content .profile .account {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+            .container .section-whats-new .big-3-section .content .profile .account button {
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              background-color: #f2f3f8;
+              cursor: pointer;
+              float: right;
+              position: relative; }
+              .container .section-whats-new .big-3-section .content .profile .account button:hover::after {
+                visibility: visible; }
+              .container .section-whats-new .big-3-section .content .profile .account button::after {
+                content: "Go Pro To Watch";
+                position: absolute;
+                top: -70px;
+                left: -7.5px;
+                width: 50px;
+                padding: 5px;
+                border-radius: 2px;
+                display: flex;
+                color: #666666;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                background-color: white;
+                visibility: hidden; }
+              .container .section-whats-new .big-3-section .content .profile .account button i {
+                color: #cccfdc;
+                font-size: 17px; }
+            .container .section-whats-new .big-3-section .content .profile .account .info {
+              width: 50%;
+              height: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center; }
+              .container .section-whats-new .big-3-section .content .profile .account .info img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                object-fit: cover; }
+              .container .section-whats-new .big-3-section .content .profile .account .info .text {
+                margin-left: 5%; }
+                .container .section-whats-new .big-3-section .content .profile .account .info .text p {
+                  font-size: 15px;
+                  opacity: 0.7; }
+                .container .section-whats-new .big-3-section .content .profile .account .info .text span {
+                  font-size: 13px;
+                  opacity: 0.5; }
+    .container .section-whats-new .small-4-section {
+      height: 430px; }
+      .container .section-whats-new .small-4-section .content {
+        width: 23%;
+        height: 100%;
+        padding: 15px;
+        border-radius: 4px;
+        transition: 300ms all;
+        cursor: pointer;
+        background-color: white; }
+        .container .section-whats-new .small-4-section .content:hover .image-content img {
+          transform: scale(1.1); }
+        .container .section-whats-new .small-4-section .content:hover {
+          box-shadow: 0px 0px 20px #c3c3c3; }
+        .container .section-whats-new .small-4-section .content .image-content {
+          width: 100%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .container .section-whats-new .small-4-section .content .image-content img {
+            width: 150px;
+            height: 150px;
+            transition: 300ms all;
+            object-fit: cover; }
+          .container .section-whats-new .small-4-section .content .image-content span {
+            margin-top: 5%;
+            opacity: 0.5;
+            font-weight: 250; }
+        .container .section-whats-new .small-4-section .content .title {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .section-whats-new .small-4-section .content .title h2 {
+            font-weight: 350; }
+        .container .section-whats-new .small-4-section .content .profile {
+          width: 100%;
+          height: 15%; }
+          .container .section-whats-new .small-4-section .content .profile .account {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; }
+            .container .section-whats-new .small-4-section .content .profile .account button {
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              background-color: #f2f3f8;
+              cursor: pointer;
+              float: right;
+              position: relative; }
+              .container .section-whats-new .small-4-section .content .profile .account button:hover::after {
+                visibility: visible; }
+              .container .section-whats-new .small-4-section .content .profile .account button::after {
+                content: "Go Pro To Watch";
+                position: absolute;
+                top: -70px;
+                left: -7.5px;
+                width: 50px;
+                padding: 5px;
+                border-radius: 2px;
+                display: flex;
+                color: #666666;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                background-color: white;
+                visibility: hidden; }
+              .container .section-whats-new .small-4-section .content .profile .account button i {
+                color: #cccfdc;
+                font-size: 17px; }
+            .container .section-whats-new .small-4-section .content .profile .account .info {
+              width: 50%;
+              height: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center; }
+              .container .section-whats-new .small-4-section .content .profile .account .info img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                object-fit: cover; }
+              .container .section-whats-new .small-4-section .content .profile .account .info .text {
+                margin-left: 5%; }
+                .container .section-whats-new .small-4-section .content .profile .account .info .text p {
+                  font-size: 15px;
+                  opacity: 0.7; }
+                .container .section-whats-new .small-4-section .content .profile .account .info .text span {
+                  font-size: 13px;
+                  opacity: 0.5; }
+      .container .section-whats-new .small-4-section .content:nth-child(3) .profile .account button::after, .container .section-whats-new .small-4-section .content:nth-child(4) .profile .account button::after {
+        width: 125px;
+        left: -50px;
+        content: "Community Resource Free To Watch"; }
+    .container .section-whats-new .list-section {
+      width: 100%;
+      margin-top: 2.5%; }
+      .container .section-whats-new .list-section .content {
+        width: 100%;
+        height: 100px;
+        border-radius: 4px;
+        background-color: white;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5%; }
+        .container .section-whats-new .list-section .content .left-content {
+          display: flex;
+          align-items: center;
+          width: 90.5%; }
+          .container .section-whats-new .list-section .content .left-content img {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            object-fit: cover; }
+          .container .section-whats-new .list-section .content .left-content .info {
+            margin-left: 20px;
+            height: 100%;
+            width: 100%; }
+            .container .section-whats-new .list-section .content .left-content .info a:first-child {
+              color: black; }
+              .container .section-whats-new .list-section .content .left-content .info a:first-child:hover {
+                text-decoration: underline; }
+            .container .section-whats-new .list-section .content .left-content .info .account {
+              margin-top: 2%;
+              width: 50%;
+              height: 100%;
+              display: flex;
+              align-items: center; }
+              .container .section-whats-new .list-section .content .left-content .info .account img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 2.5%; }
+              .container .section-whats-new .list-section .content .left-content .info .account a {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 25%;
+                margin-right: 2.5%;
+                color: black;
+                font-size: 16px;
+                font-weight: 300; }
+              .container .section-whats-new .list-section .content .left-content .info .account span {
+                color: black;
+                font-size: 13px;
+                font-weight: 250;
+                opacity: 0.4; }
+        .container .section-whats-new .list-section .content .right-content {
+          width: 5%;
+          height: 100%; }
+          .container .section-whats-new .list-section .content .right-content .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 50%; }
+            .container .section-whats-new .list-section .content .right-content .top-section i {
+              font-size: 20px; }
+            .container .section-whats-new .list-section .content .right-content .top-section span {
+              font-size: 13px;
+              opacity: 0.6; }
+          .container .section-whats-new .list-section .content .right-content .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 50%; }
+            .container .section-whats-new .list-section .content .right-content .bottom-section i {
+              font-size: 20px; }
+            .container .section-whats-new .list-section .content .right-content .bottom-section a {
+              color: black;
+              font-size: 13px;
+              opacity: 0.6; }
+              .container .section-whats-new .list-section .content .right-content .bottom-section a:hover {
+                text-decoration: underline; }
+  .container .section-hot-courses {
+    width: 80%;
+    margin: 7.5% auto auto 10%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .container .section-hot-courses .top-title {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .section-hot-courses .top-title h1 {
+        font-size: 35px;
+        font-weight: 200; }
+    .container .section-hot-courses .content {
+      width: 31.5%;
+      height: 500px;
+      padding: 15px;
+      cursor: pointer;
+      transition: 300ms all;
+      background-color: white;
+      margin-bottom: 2%; }
+      .container .section-hot-courses .content:hover .image-content img {
+        transform: scale(1.1); }
+      .container .section-hot-courses .content:hover {
+        box-shadow: 0px 0px 20px #c3c3c3; }
+      .container .section-hot-courses .content .image-content {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .container .section-hot-courses .content .image-content img {
+          width: 200px;
+          height: 200px;
+          transition: 300ms all;
+          object-fit: cover; }
+      .container .section-hot-courses .content .title {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .section-hot-courses .content .title h2 {
+          font-weight: 350; }
+      .container .section-hot-courses .content .profile {
+        width: 100%;
+        height: 15%; }
+        .container .section-hot-courses .content .profile .account {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .container .section-hot-courses .content .profile .account button {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #f2f3f8;
+            cursor: pointer;
+            float: right;
+            position: relative; }
+            .container .section-hot-courses .content .profile .account button:hover::after {
+              visibility: visible; }
+            .container .section-hot-courses .content .profile .account button::after {
+              content: "Go Pro To Watch";
+              position: absolute;
+              top: -70px;
+              left: -7.5px;
+              width: 50px;
+              padding: 5px;
+              border-radius: 2px;
+              display: flex;
+              color: #666666;
+              justify-content: center;
+              align-items: center;
+              height: 50px;
+              background-color: white;
+              visibility: hidden; }
+            .container .section-hot-courses .content .profile .account button i {
+              color: #cccfdc;
+              font-size: 17px; }
+          .container .section-hot-courses .content .profile .account .info {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; }
+            .container .section-hot-courses .content .profile .account .info img {
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              object-fit: cover; }
+            .container .section-hot-courses .content .profile .account .info .text {
+              margin-left: 5%; }
+              .container .section-hot-courses .content .profile .account .info .text p {
+                font-size: 15px;
+                opacity: 0.7; }
+              .container .section-hot-courses .content .profile .account .info .text span {
+                font-size: 13px;
+                opacity: 0.5; }
+  .container .section-what-egghead {
+    width: 80%;
+    height: 120vh;
+    width: 80%;
+    margin: 5% auto auto 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .container .section-what-egghead .left-content {
+      width: 25%;
+      height: 50%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .container .section-what-egghead .left-content .content-box {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background-color: white;
+        transition: 300ms all; }
+        .container .section-what-egghead .left-content .content-box:hover {
+          transform: scale(1.1); }
+        .container .section-what-egghead .left-content .content-box img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%; }
+        .container .section-what-egghead .left-content .content-box h2 {
+          font-weight: 300;
+          margin-top: 2.5%; }
+    .container .section-what-egghead .right-content {
+      margin-left: 12%;
+      width: 30%;
+      height: 40%; }
+      .container .section-what-egghead .right-content h1 {
+        font-size: 35px;
+        font-weight: 350;
+        color: #181818; }
+      .container .section-what-egghead .right-content p {
+        margin-top: 3.5%;
+        word-spacing: 2px;
+        font-size: 18px;
+        color: #181818; }
+    .container .section-what-egghead .bottom-content {
+      width: 100%;
+      height: 450px;
+      background-color: white;
+      display: flex;
+      align-items: center; }
+      .container .section-what-egghead .bottom-content .main-content {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        .container .section-what-egghead .bottom-content .main-content .image-content {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .container .section-what-egghead .bottom-content .main-content .text {
+          width: 40%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .section-what-egghead .bottom-content .main-content .text p {
+            font-size: 20px;
+            color: #141414;
+            word-spacing: 2px;
+            text-align: center; }
+        .container .section-what-egghead .bottom-content .main-content .profile {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .section-what-egghead .bottom-content .main-content .profile img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%; }
+          .container .section-what-egghead .bottom-content .main-content .profile span {
+            margin-left: 1.5%;
+            font-size: 16px;
+            opacity: 0.6; }
+  .container footer {
+    width: 100%;
+    height: 497px;
+    background-color: #141617; }
+    .container footer .top-section {
+      width: 80%;
+      margin-left: 10%;
+      height: 70%;
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      .container footer .top-section:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        background-color: #1e2021; }
+      .container footer .top-section .left-content {
+        width: 20%;
+        height: 80%; }
+        .container footer .top-section .left-content table {
+          margin-top: 15%;
+          width: 100%;
+          height: 70%; }
+          .container footer .top-section .left-content table h2 {
+            font-size: 15px;
+            color: white;
+            opacity: 0.7; }
+          .container footer .top-section .left-content table td span {
+            display: inline-block; }
+          .container footer .top-section .left-content table td a {
+            font-size: 15px;
+            display: inline-block;
+            color: white;
+            opacity: 0.4;
+            transform: scale(1);
+            transition: 300ms all; }
+            .container footer .top-section .left-content table td a:hover {
+              opacity: 1;
+              transform: scale(1.1); }
+        .container footer .top-section .left-content img {
+          margin-top: 15%; }
+      .container footer .top-section .right-content {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        .container footer .top-section .right-content h2 {
+          color: whitesmoke;
+          font-weight: 200; }
+        .container footer .top-section .right-content .search-bar {
+          width: 80%;
+          height: 25%;
+          position: relative;
+          margin-top: 4.5%; }
+          .container footer .top-section .right-content .search-bar input {
+            width: 100%;
+            height: 50%;
+            border-radius: 4px;
+            background-color: #1e2128;
+            color: whitesmoke;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 10px; }
+            .container footer .top-section .right-content .search-bar input:focus {
+              outline: none; }
+          .container footer .top-section .right-content .search-bar button {
+            width: 12%;
+            height: 50%;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: blue;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 88%; }
+            .container footer .top-section .right-content .search-bar button i {
+              font-size: 16px;
+              color: white; }
+    .container footer .bottom-section {
+      margin-left: 10%;
+      width: 80%;
+      height: 30%; }
+      .container footer .bottom-section .content {
+        margin-top: 1.5%; }
+        .container footer .bottom-section .content a, .container footer .bottom-section .content span {
+          font-size: 15px;
+          color: white;
+          font-weight: 250;
+          opacity: 0.7; }
+        .container footer .bottom-section .content span {
+          margin-left: 2.5%; }
